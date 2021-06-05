@@ -1,4 +1,6 @@
 # Hoje é dia de react, BB!
+**Nosso Dontpad com algumas anotações**
+http://dontpad.com/react-simara
 
 Vamos aprender um dos conteúdos mais queridinhos do mercado, o react. 
 
