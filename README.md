@@ -4,6 +4,8 @@ Vamos aprender um dos conteúdos mais queridinhos do mercado, o react.
 
 Vamos conhecer um pouco do universo dessa ferramenta incrível, os conceitos fundamentais e criar nossos primeiros projetinhos. 
 
+**Objetivos** Entender os pilares do React (componentes e props) e ser capaz de criar uma primeira aplicação em React do zero
+
 Nossa aula será dividida em duas partes:
 
 1- Conceitos e primeiros passos com react ❤️ <br>
