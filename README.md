@@ -72,7 +72,7 @@ E a boa notícia: componente é a base do react.
 Exemplo meu milk shake de ovomaltine do Bobs.
 
 * Visual: o retorno dos elementos nos componentes
-* Funcional: as funções de javascript que dão vida aos componentes
+* Funcionalidade: as funções de javascript que dão vida aos componentes
 * Estado: Cria o poder de memória nos componentes
 
 **Dicionário react:**
@@ -139,16 +139,47 @@ Como no HTML passamos as props como atributos de tags.
 
 
 
+```
+Em html:
+<img src="http://">
+
+E se a gente pudesse mudar o ingredientes do nosso milk shake ou criar as nossas próprias receitas?
+
+<Capslock texto="Qualquer texto vai ficar em caixa alta"> // QUALQUER TEXTO VAI FICAR EM CAIXA ALTA
+
+function Capslock(props) {
+  const textoInserido = props.texto
+  const textoEmCapslock = textoInserido.toUpperCase()
+
+  return <div>{textoEmCapslock}</div>
+}
+```
+
+
 #### Children
 
 Children é uma propriedade do objeto props.
 E assim como no HTML, temos as divs mães que criam uma hierarquia com os elementos filhos. Usando o children podemos modificar dados entre as tags de fechamento e abertura de um elemento. 
 
+```
+Em html:
 
+<strong>Seu texto fica bold</strong>
+
+E se a gente pudesse escrever as nossas próprias funcionalidades nas tags?
+
+<Capslock>Qualquer texto vai ficar em caixa alta</Capslock> // QUALQUER TEXTO VAI FICAR EM CAIXA ALTA
+
+function Capslock(props) {
+  const textoInserido = props.children
+  const textoEmCapslock = textoInserido.toUpperCase()
+
+  return <div>{textoEmCapslock}</div>
+}
+```
 
 
 <br>
-
 
 
 **Exemplos:**
@@ -188,8 +219,6 @@ E assim como no HTML, temos as divs mães que criam uma hierarquia com os elemen
 | Exemplo 9 | Descrição |
 | --- | --- |
 | `Lista` | Vamos usar dados de um arquivo interno que simula um JSON para renderizar uma lista na tela|
-
-
 
 ---
 **Desafio:**
